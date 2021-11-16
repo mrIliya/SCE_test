@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import './base/base';
+
+@import './media/media';
+
+// 9. Slick-slider
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
