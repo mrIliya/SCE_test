@@ -61,14 +61,14 @@ module.exports = {
         collapseWhitespace: false,
       },
     }),
-   //  new CopyWebpackPlugin({
-   //    patterns: [
-   //      {
-   //        from: "static",
-   //        to: "./",
-   //      },
-   //    ],
-   //  }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "static",
+          to: "./",
+        },
+      ],
+    }),
     new ESLintPlugin(),
   ],
   target: "web",

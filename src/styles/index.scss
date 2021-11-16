@@ -1,6 +1,8 @@
-@charset "UTF-8";
 
-@import './base/base';
+@import './base/base',
+'./base/fonts';
+
+@import './main/main';
 
 @import './media/media';
 
