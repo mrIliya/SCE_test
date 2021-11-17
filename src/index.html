@@ -40,19 +40,19 @@
 			</h1>
 			<div class="timer__content">
 				<div class="timer-item">
-					<span class="timer-item__num">05</span>
+					<span class="timer-item__num">00</span>
 					<p class="timer-item__text">days</p>
 				</div>
 				<div class="timer-item">
-					<span class="timer-item__num">05</span>
+					<span class="timer-item__num">00</span>
 					<p class="timer-item__text">hours</p>
 				</div>
 				<div class="timer-item">
-					<span class="timer-item__num">05</span>
+					<span class="timer-item__num">00</span>
 					<p class="timer-item__text">minutes</p>
 				</div>
 				<div class="timer-item">
-					<span class="timer-item__num">05</span>
+					<span class="timer-item__num" id="seconds">10</span>
 					<p class="timer-item__text">seconds</p>
 				</div>
 			</div>
@@ -119,9 +119,9 @@
 	<section class="contact">
 		<div class="contact__inner container__lg">
 			<h3 class="contact__title main-title">Contact us</h3>
-			<form class="contact-form">
-				<input type="email" class="contact-form__input" placeholder="Email">
-				<input type="tel" class="contact-form__input" placeholder="Mobile phone">
+			<form class="contact-form" id="contact-form" action="https://sheetdb.io/api/v1/295n2n2s97fkg" method="POST">
+				<input type="email" class="contact-form__input" placeholder="Email" name="data[email]">
+				<input type="tel" class="contact-form__input" placeholder="Mobile phone" name="data[phone]">
 				<div class="contact-form__check">
 					<input type="checkbox" class="contact-form__input">
 					<span class="contact-form__text">I accept Privacy Policy or a Terms and Conditions</span>
@@ -169,14 +169,15 @@
 				</div>
 			</div>
 			<div class="table-content__button">
-				<button class="table-content__btn main-btn">Load more</button>
+				<button class="table-content__btn main-btn" type="button">Load more</button>
 			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="footer__top">
-			<img src="./assets/images/footer-img.png" class="footer__img">
+			<div class="footer__img"></div>
+			<div class="footer__img"></div>
 		</div>
 		<div class="footer__content">
 			<div class="footer__inner container__lg">
@@ -266,11 +267,23 @@
 				</div>
 			</div>
 		</div>
-		
 	</footer>
-	
-	
-	
+
+	<section class="modal">
+		<div class="modal__inner">
+			<div class="modal__content">
+				<button class="modal__close" type="button">
+					<img src="./assets/images/close.png">
+				</button>
+				<p class="modal__text">
+					Voyez ce jeu <strong>exquis wallon.</strong>
+				</p>
+				<button class="modal__btn main-btn" type="button">OK</button>
+			</div>
+		</div>
+	</section>
+
+
 
 </body>
 
